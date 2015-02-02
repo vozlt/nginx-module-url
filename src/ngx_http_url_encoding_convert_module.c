@@ -215,7 +215,7 @@ ngx_http_url_encoding_convert_iconv(ngx_http_request_t *r,
 
     uri = r->uri;
 
-    rv = iconv(cd, (void *) &uri.data, &uri.len, (void *) &b->last, &ngx_pagesize);
+    rv = iconv(cd, (void *) &uri.data, &uri.len, (void *) &b->last, &alloc_size);
 
     if (rv == (size_t) -1) {
         iconv_close(cd);
