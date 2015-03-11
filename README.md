@@ -121,4 +121,4 @@ The value will be multiplied by the length of the requested uri.
 If has been set to both url_encoding_convert_alloc_size and url_encoding_convert_alloc_size_x(multiplied by uri.len), set the larger value of the two.
 
 ## Author
-YoungJoo.Kim [<vozlt@vozlt.com>]
+YoungJoo.Kim(김영주) [<vozlt@vozlt.com>]
