@@ -41,6 +41,7 @@ http {
 
 ## Description
 This is an Nginx module that converts the encoding of characters in requested uri into user defined encoding(charset).
+That is to convert uri to user defined encoding before accessing a file of the uri.
 This module does work, if the requested file does not exist.
 For example, nginx's configuration is as above, if the server's file name is "한글.txt"
 encoded to euc-kr and client's requested uri is "/한글.txt" encoded to utf-8 and 
