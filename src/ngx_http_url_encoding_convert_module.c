@@ -293,3 +293,5 @@ ngx_http_url_encoding_convert_init(ngx_conf_t *cf)
 
     return NGX_OK;
 }
+
+/* vi:set ft=c ts=4 sw=4 et fdm=marker: */
