@@ -52,41 +52,41 @@ This module's working phase can be changed according to the directive url_encodi
 
 ### url_encoding_convert
 
--   | - 
---- | ---
-**Syntax**  | url_encoding_convert_from [on\|off]
-**Default** | -
-**Context** | http, server, location
+| -   | - |
+| --- | --- |
+| **Syntax**  | url_encoding_convert_from [on\|off] |
+| **Default** | - |
+| **Context** | http, server, location |
 
 Description: The module working's enable or disable.
 
 ### url_encoding_convert_from
 
--   | - 
---- | ---
-**Syntax**  | url_encoding_convert_from \<*charset*\>
-**Default** | utf-8
-**Context** | http, server, location
+| -   | - |
+| --- | --- |
+| **Syntax**  | url_encoding_convert_from \<*charset*\> |
+| **Default** | utf-8 |
+| **Context** | http, server, location |
 
 Description: The encoding charset from client.
 
 ### url_encoding_convert_to
 
--   | - 
---- | ---
-**Syntax**  | url_encoding_convert_to \<*charset*\>
-**Default** | euc-kr
-**Context** | http, server, location
+| -   | - |
+| --- | --- |
+| **Syntax**  | url_encoding_convert_to \<*charset*\> |
+| **Default** | euc-kr |
+| **Context** | http, server, location |
 
 Description: The encoding charset from server.
 
 ### url_encoding_convert_phase
 
--   | - 
---- | ---
-**Syntax**  | url_encoding_convert_phase [post_read\|preaccess]
-**Default** | preaccess
-**Context** | http, server, location
+| -   | - |
+| --- | --- |
+| **Syntax**  | url_encoding_convert_phase [post_read\|preaccess] |
+| **Default** | preaccess |
+| **Context** | http, server, location |
 
 Description: The module's working phase.
 
@@ -94,27 +94,27 @@ Description: The module's working phase.
 The following values are available when using this directive:
 
 * post_read
- * It works before nginx-rewrite-module.
+  * It works before nginx-rewrite-module.
 * preaccess
- * It works after nginx-rewrite-module.
+  * It works after nginx-rewrite-module.
 
 ### url_encoding_convert_alloc_size
 
--   | - 
---- | ---
-**Syntax**  | url_encoding_convert_alloc_size \<*buffer_size*\>
-**Default** | 0
-**Context** | http, server, location
+| -   | - |
+| --- | --- |
+| **Syntax**  | url_encoding_convert_alloc_size \<*buffer_size*\> |
+| **Default** | 0 |
+| **Context** | http, server, location |
 
 Description: The iconv output buffer size(bytes).
 
 ### url_encoding_convert_alloc_size_x
 
--   | - 
---- | ---
-**Syntax**  | url_encoding_convert_alloc_size_x [*x4-x16*]
-**Default** | x4
-**Context** | http, server, location
+| -   | - |
+| --- | --- |
+| **Syntax**  | url_encoding_convert_alloc_size_x [*x4-x16*] |
+| **Default** | x4 |
+| **Context** | http, server, location |
 
 Description: The iconv output buffer size will be multiplied.
 The value will be multiplied by the length of the requested uri.
