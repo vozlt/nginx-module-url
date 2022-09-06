@@ -54,7 +54,7 @@ This module's working phase can be changed according to the directive url_encodi
 
 | -   | - |
 | --- | --- |
-| **Syntax**  | url_encoding_convert_from [on\|off] |
+| **Syntax**  | url_encoding_convert [on\|off] |
 | **Default** | - |
 | **Context** | http, server, location |
 
